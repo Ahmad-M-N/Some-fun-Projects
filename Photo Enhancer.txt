@@ -1,0 +1,16 @@
+// write your code here
+var img=new SimpleImage("hilton.jpg");
+print("Before:");
+print();
+print(img);
+for (var pixel of img.values()){
+    if (pixel.getRed()<=234 || pixel.getGreen()<=234 || pixel.getBlue()<=234){
+        pixel.setRed(pixel.getRed()+20);
+        pixel.setGreen(pixel.getGreen()+20);
+        pixel.setBlue(pixel.getBlue()+20);
+    }
+}
+print();
+print("After:");
+print();
+print(img);
